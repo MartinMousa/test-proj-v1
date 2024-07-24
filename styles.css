@@ -1,0 +1,152 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.add-list-form {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-list-form input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.add-list-form button {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-list-form button:hover {
+    background-color: #45a049;
+}
+
+.lists-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.todo-list {
+    background-color: #fff;
+    width: 300px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.todo-list h2 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.todo-list h2 span {
+    font-size: 14px;
+    color: #666;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.todo-item.completed {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+.todo-item span {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.todo-item .task-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.todo-item .task-info .due-date {
+    font-size: 12px;
+    color: #666;
+}
+
+.todo-item .task-info .priority {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.todo-item .priority.low {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.todo-item .priority.medium {
+    background-color: #FFC107;
+    color: #333;
+}
+
+.todo-item .priority.high {
+    background-color: #F44336;
+    color: white;
+}
+
+.todo-item .actions {
+    display: flex;
+    gap: 5px;
+}
+
+.todo-item button {
+    padding: 4px 8px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+}
+
+.todo-item button:hover {
+    background-color: #e0e0e0;
+}
